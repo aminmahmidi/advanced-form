@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Fonts/regular/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="img-container">
+            <img src="img/image 54.png" alt="login-img">
+        </div>
+        <div class="form-container">
+            <!-- sign In form-->
+            <div class="sign-in">
+                <form novalidate class="form">
+                    <h1>Sign in</h1>
+                    <div class="input-container">
+                        <label for="email" class="label">Email</label>
+                        <section class="input-box">
+                            <i class="ph ph-envelope-simple"></i>
+                            <input type="email" id="email" placeholder="enter you Email">
+                        </section>
+                        <span class="error">Please provide valid Email</span>
+                    </div>
+                    <div class="input-container">
+                        <label for="password">Password</label>
+                        <section class="input-box">
+                            <i class="ph ph-lock"></i>
+                            <input type="password" id="password" placeholder="enter your Password">
+                        </section>
+                    </div>
+                    <button type="submit" class="submit-btn">Sign In</button>
+                                <span class="switch-text"> Don't have Account? <a href="#" class="sign-link sign-up-btn">Sign
+                                        Up</a></span>
+                </form>
+            </div>
+
+            <!-- sign up form-->
+            <div class="sign-up">
+                <form novalidate class="form">
+                            <h1>sign up</h1>
+                    <div class="input-container">
+                        <label for="name">Full Name</label>
+                        <section class="input-box">
+                            <i class="ph ph-user"></i>
+                            <input type="text" id="name" placeholder="enter you full name">
+
+                        </section>
+                        <span class="error  error-name">Please Enter Your Name</span>
+                    </div>
+                    <div class="input-container">
+                        <label for="email-sign-up">Email</label>
+                        <section class="input-box">
+                            <i class="ph ph-envelope-simple"></i>
+                            <input type="email" id="email-sign-up" placeholder="enter you Email">
+                        </section>
+                        <span class="error  error-sign-up">Please provide valid Email</span>
+                    </div>
+                    <div class="input-container">
+                        <label for="set-password">Set Password</label>
+                        <section class="input-box">
+                            <i class="ph ph-lock"></i>
+                            <input type="password" id="set-password" placeholder="enter your Password">
+                        </section>
+                        <span class="error check-set-pass-error">please provide a password</span>
+                    </div>
+                    <div class="input-container">
+                        <section class="input-box">
+                            <i class="ph ph-lock"></i>
+                            <input type="password" id="repeat-password" placeholder="re-enter your Password">
+                        </section>
+                        <span class="error check-pass-error">Password doesn't match</span>
+                    </div>
+                    <button type="submit" class="submit-btn submit-btn-sign-up">Sign Up</button>
+                                    <span class="switch-text"> Already have Account? <a href="#" class="sign-link sign-in-btn">Sign
+                                            In</a></span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

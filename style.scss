@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "poppins";
+  src: url(Poppins-Regular.ttf), format(ttf);
+}
+
+:root {
+  ---primary-color: #232323;
+  ---border-color: rgb(136, 136, 136);
+  ---input-background: #f2f2f2;
+  ---input-font-size: 14px;
+}
+* {
+  box-sizing: content-box;
+  font-family: "poppins";
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  h1 {
+    font-weight: bolder;
+    font-size: 45px;
+  }
+}
+.form-container {
+  border: 2px solid var(---border-color);
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 10px 0 20px 0;
+  align-items: center;
+  align-content: center;
+  transition: 0.4s;
+}
+
+.sign-in {
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  width: 90%;
+  transform: translateX(0);
+  opacity: 1;
+  transition: 0.4s;
+}
+input {
+  padding: 2px 0;
+  font-size: 15px;
+  display: block;
+  width: 70vh;
+}
+.input-box {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  background-color: var(---input-background);
+  border-radius: 10px;
+  transition: 0.4s;
+  &:hover {
+    background-color: rgb(243, 243, 243);
+  }
+}
+.input-container {
+  margin: 20px 0;
+}
+
+input {
+  border: none;
+  background: none;
+  padding: 13px 0;
+  margin-right: 10px;
+  font-size: var(---input-font-size);
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+i {
+  padding: 10px;
+  font-size: 20px;
+}
+
+label {
+  display: block;
+  padding: 2px;
+  width: 100%;
+  font-weight: bold;
+}
+.img-container {
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+  img {
+    object-fit: cover;
+  }
+}
+.error {
+  display: none;
+}
+.show-error {
+  display: block;
+  color: red;
+  z-index: 100;
+}
+
+.submit-btn {
+  border: none;
+  background-color: var(---primary-color);
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 20px 0;
+  transition: 0.4s;
+  margin: 15px 0 0 0;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(60, 60, 60);
+  }
+}
+.switch-text {
+  margin: 20px 0 0 0;
+  display: block;
+  text-align: center;
+}
+.sign-up {
+  display: none;
+  margin: 0 auto;
+  padding: 0 0 0 20px;
+  border-radius: 10px;
+  width: 90%;
+  transition: 0.4s;
+  border-radius: 10px;
+  animation: switch 0.4s alternate;
+}
+@keyframes switch {
+  0% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    display: unset;
+  }
+  .img-container {
+    display: none;
+  }
+  .form-container {
+    width: 80%;
+    margin: 5%;
+  }
+  .form{
+    margin: 0 auto;
+    // border: 2px solid red;
+    padding: 10px;
+  }
+  .sign-up {
+    margin-left: 38px;
+    width: 90%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .form-container {
+    width: 95%;
+    margin:3% 2%;
+    padding: 0;
+  }
+  .sign-up {
+    margin-left: 5px;
+    width: 90%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+  }
+}
